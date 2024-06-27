@@ -1,0 +1,559 @@
+Unreviewed CPLX56SW5V-4        D-mannitol               PTS       
+           putative D-mannitol PEP-driven transporter
+           an [HPr protein]-Npi-phospho-L-histidine + D-mannitol[periplasm]  ->  D-mannitol 1-phosphate[cytosol] + an [HPr]-L-histidine
+Unreviewed CPLX56SW5V-1        phosphate                ATP       
+           putative phosphate ABC transporter
+           ATP + phosphate[periplasm] + H2O  ->  ADP + phosphate[cytosol] + phosphate[cytosol] + H+
+Unreviewed CPLX56SW5V-2        phosphonate              ATP       
+           putative phosphonate ABC transporter
+           phosphonate[periplasm] + ATP + H2O  ->  phosphonate[cytosol] + ADP + phosphate + H+
+Unreviewed CPLX56SW5V-3     1  spermidine               ATP       
+           putative spermidine/putrescine ABC transporter
+           ATP + spermidine[periplasm] + H2O  ->  ADP + spermidine[cytosol] + phosphate + H+
+Unreviewed CPLX56SW5V-3     2  putrescine               ATP       
+           putative spermidine/putrescine ABC transporter
+           ATP + putrescine[periplasm] + H2O  ->  ADP + putrescine[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_15845-MONOMER    ATP                      UNKNOWN   
+           atp-binding/permease protein cydd
+           ATP[periplasm]  ->  ATP[cytosol]
+Unreviewed LFNDFJ_10515-MONOMER    fluoride                 UNKNOWN   
+           putative fluoride ion transporter crcb
+           fluoride[periplasm]  <-->  fluoride[cytosol]
+Unreviewed LFNDFJ_01700-MONOMER 1  L-proline                UNKNOWN   
+           proline/betaine transporter
+           L-proline[periplasm]  ->  L-proline[cytosol]
+Unreviewed LFNDFJ_01700-MONOMER 2  glycine betaine          UNKNOWN   
+           proline/betaine transporter
+           glycine betaine[periplasm]  <-->  glycine betaine[cytosol]
+Unreviewed LFNDFJ_14315-MONOMER    lactose                  ATP       
+           lactose transport system permease protein lacf
+           lactose[periplasm] + ATP + H2O  ->  lactose[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_12750-MONOMER    H+                       SECONDARY 
+           monovalent cation/h(+) antiporter subunit g
+           Na+[cytosol] + 2 H+[periplasm]  <-->  Na+[periplasm] + 2 H+[cytosol]
+Unreviewed LFNDFJ_06625-MONOMER    Mg2+                     UNKNOWN   
+           magnesium transporter
+           Mg2+[periplasm]  ->  Mg2+[cytosol]
+Unreviewed LFNDFJ_12565-MONOMER 1  glycine betaine          ATP       
+           osmoprotectant (glycine betaine/carnitine/choline/l-proline) abc transporter inner membrane subunit
+           glycine betaine[out] + ATP + H2O  ->  glycine betaine[in] + ADP + phosphate + H+
+Unreviewed LFNDFJ_12565-MONOMER 2  L-carnitine              ATP       
+           osmoprotectant (glycine betaine/carnitine/choline/l-proline) abc transporter inner membrane subunit
+           L-carnitine[periplasm] + ATP + H2O  ->  L-carnitine[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_12565-MONOMER 3  choline                  ATP       
+           osmoprotectant (glycine betaine/carnitine/choline/l-proline) abc transporter inner membrane subunit
+           choline[periplasm] + ATP + H2O  ->  choline[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_12565-MONOMER 4  L-proline                ATP       
+           osmoprotectant (glycine betaine/carnitine/choline/l-proline) abc transporter inner membrane subunit
+           ATP + L-proline[periplasm] + H2O  ->  ADP + L-proline[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_16975-MONOMER 1  phosphate                ATP       
+           phosphate/phosphite/phosphonate abc transporter substrate-binding protein
+           ATP + phosphate[periplasm] + H2O  ->  ADP + phosphate[cytosol] + phosphate[cytosol] + H+
+Unreviewed LFNDFJ_16975-MONOMER 2  phosphite                ATP       
+           phosphate/phosphite/phosphonate abc transporter substrate-binding protein
+           phosphite[periplasm] + ATP + H2O  ->  phosphite[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_16975-MONOMER 3  phosphonate              ATP       
+           phosphate/phosphite/phosphonate abc transporter substrate-binding protein
+           phosphonate[periplasm] + ATP + H2O  ->  phosphonate[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_06795-MONOMER    an oligopeptide          ATP       
+           oligopeptide transport system permease protein oppc
+           an oligopeptide[periplasm] + ATP + H2O  ->  an oligopeptide[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_18450-MONOMER    L-asparagine             SECONDARY 
+           l-asparagine permease 1
+           L-asparagine[periplasm] + H+[periplasm]  <-->  L-asparagine[cytosol] + H+[cytosol]
+Unreviewed LFNDFJ_17355-MONOMER    tetracycline             SECONDARY 
+           tetracycline efflux mfs transporter tet(42)
+           tetracycline[cytosol] + H+[cytosol]  ->  tetracycline[periplasm] + H+[periplasm]
+Unreviewed LFNDFJ_00550-MONOMER    L-methionine             ATP       
+           methionine abc transporter substrate-binding protein
+           ATP + L-methionine[periplasm] + H2O  ->  ADP + L-methionine[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_15880-MONOMER    nitrate                  SECONDARY 
+           nitrate transporter permease
+           nitrate[periplasm] + H+[periplasm]  <-->  nitrate[cytosol] + H+[cytosol]
+Unreviewed LFNDFJ_10355-MONOMER    L-proline                SECONDARY 
+           sodium/proline transporter
+           Na+[periplasm] + L-proline[periplasm]  <-->  Na+[cytosol] + L-proline[cytosol]
+Unreviewed LFNDFJ_09440-MONOMER 1  Zn2+                     UNKNOWN   
+           zinc/manganese transport system substrate-binding protein
+           Zn2+[periplasm]  ->  Zn2+[cytosol]
+Unreviewed LFNDFJ_09440-MONOMER 2  Mn2+                     UNKNOWN   
+           zinc/manganese transport system substrate-binding protein
+           Several possible reactions available for import
+Unreviewed LFNDFJ_14425-MONOMER    D-ribose                 ATP       
+           ribose transport system permease protein rbsc
+           D-ribose[periplasm] + ATP + H2O  ->  D-ribose[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_17320-MONOMER    Fe3+                     ATP       
+           fe(3+)-siderophore abc transporter permease
+           Fe3+[periplasm] + ATP + H2O  ->  Fe3+[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_03440-MONOMER    taurine                  ATP       
+           taurine abc transporter permease
+           taurine[periplasm] + ATP + H2O  ->  taurine[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_17470-MONOMER    maltose                  ATP       
+           maltose/maltodextrin transport system permease protein
+           maltose[periplasm] + ATP + H2O  ->  maltose[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_09790-MONOMER    alpha-L-rhamnopyranose   ATP       
+           rhamnose abc transporter substrate-binding protein
+           alpha-L-rhamnopyranose[periplasm] + ATP + H2O  ->  alpha-L-rhamnopyranose[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_12545-MONOMER    autoinducer 2            UNKNOWN   
+           ai-2 transport protein tqsa
+           autoinducer 2[periplasm]  ->  autoinducer 2[cytosol]
+Unreviewed LFNDFJ_15000-MONOMER    glutathione              ATP       
+           glutathione abc transporter permease gsic
+           ATP + glutathione[periplasm] + H2O  ->  ADP + glutathione[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_03450-MONOMER    nitrate                  ATP       
+           nitrate abc transporter substrate-binding protein
+           nitrate[periplasm] + ATP + H2O  ->  nitrate[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_05385-MONOMER    phosphate                UNKNOWN   
+           phosphate transporter
+           phosphate[periplasm]  <-  phosphate[cytosol]
+Unreviewed LFNDFJ_14095-MONOMER    Zn2+                     UNKNOWN   
+           high-affinity zinc uptake system membrane protein znub
+           Zn2+[periplasm]  ->  Zn2+[cytosol]
+Unreviewed LFNDFJ_16695-MONOMER    3,5-dimethoxytoluene     SECONDARY 
+           drug/metabolite transporter (dmt)-like permease
+           3,5-dimethoxytoluene[periplasm] + H+[periplasm]  ->  3,5-dimethoxytoluene[cytosol] + H+[cytosol]
+Unreviewed LFNDFJ_13215-MONOMER    D-xylose                 SECONDARY 
+           d-xylose-proton symporter
+           D-xylose[periplasm] + H+[periplasm]  <-->  D-xylose[cytosol] + H+[cytosol]
+Unreviewed LFNDFJ_10985-MONOMER    K+                       ATP       
+           potassium-transporting atpase subunit kdpc
+           ATP + K+[periplasm] + H2O  ->  ADP + K+[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_09430-MONOMER    Zn2+                     ATP       
+           zinc abc transporter permease aztb
+           Zn2+[periplasm] + ATP + H2O  ->  Zn2+[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_10145-MONOMER    Co2+                     UNKNOWN   
+           cobalt transporter
+           Several possible reactions available for import
+Unreviewed LFNDFJ_12420-MONOMER 1  glycine                  ATP       
+           glycine/betaine abc transporter
+           glycine[periplasm] + ATP + H2O  ->  glycine[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_12420-MONOMER 2  glycine betaine          ATP       
+           glycine/betaine abc transporter
+           glycine betaine[out] + ATP + H2O  ->  glycine betaine[in] + ADP + phosphate + H+
+Unreviewed LFNDFJ_16250-MONOMER 1  phosphate                ATP       
+           phosphate/phosphite/phosphonate abc transporter substrate-binding protein
+           ATP + phosphate[periplasm] + H2O  ->  ADP + phosphate[cytosol] + phosphate[cytosol] + H+
+Unreviewed LFNDFJ_16250-MONOMER 2  phosphite                ATP       
+           phosphate/phosphite/phosphonate abc transporter substrate-binding protein
+           phosphite[periplasm] + ATP + H2O  ->  phosphite[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_16250-MONOMER 3  phosphonate              ATP       
+           phosphate/phosphite/phosphonate abc transporter substrate-binding protein
+           phosphonate[periplasm] + ATP + H2O  ->  phosphonate[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_07750-MONOMER    trehalose                ATP       
+           trehalose transport system permease protein sugb
+           trehalose[periplasm] + ATP + H2O  ->  trehalose[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_10685-MONOMER    pyrimidine               SECONDARY 
+           putative pyrimidine permease rutg
+           pyrimidine[periplasm] + H+[periplasm]  ->  pyrimidine[cytosol] + H+[cytosol]
+Unreviewed LFNDFJ_16985-MONOMER    phosphonate              ATP       
+           phosphonate abc transporter, permease protein phne
+           phosphonate[periplasm] + ATP + H2O  ->  phosphonate[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_10405-MONOMER 1  4-amino-2-methyl-5-pyrimidinemethanol SECONDARY 
+           putative hmp/thiamine permease protein ykoc
+           4-amino-2-methyl-5-pyrimidinemethanol[periplasm] + H+[periplasm]  ->  4-amino-2-methyl-5-pyrimidinemethanol[cytosol] + H+[cytosol]
+Unreviewed LFNDFJ_10405-MONOMER 2  thiamine                 SECONDARY 
+           putative hmp/thiamine permease protein ykoc
+           thiamine[periplasm] + H+[periplasm]  ->  thiamine[cytosol] + H+[cytosol]
+Unreviewed LFNDFJ_17505-MONOMER 1  spermidine               ATP       
+           spermidine/putrescine abc transporter substrate-binding protein
+           ATP + spermidine[periplasm] + H2O  ->  ADP + spermidine[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_17505-MONOMER 2  putrescine               ATP       
+           spermidine/putrescine abc transporter substrate-binding protein
+           ATP + putrescine[periplasm] + H2O  ->  ADP + putrescine[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_13550-MONOMER    trehalose                ATP       
+           trehalose transport system permease protein sugb
+           trehalose[periplasm] + ATP + H2O  ->  trehalose[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_08980-MONOMER    sulfite                  UNKNOWN   
+           sulfite exporter taue/safe
+           sulfite[cytosol]  ->  sulfite[periplasm]
+Unreviewed LFNDFJ_12205-MONOMER    Mg2+                     UNKNOWN   
+           magnesium transport protein cora
+           Mg2+[periplasm]  ->  Mg2+[cytosol]
+Unreviewed LFNDFJ_14310-MONOMER    trehalose                ATP       
+           trehalose transport system permease protein sugb
+           trehalose[periplasm] + ATP + H2O  ->  trehalose[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_15780-MONOMER    Na+                      SECONDARY 
+           na+/h+-dicarboxylate symporter
+           Na+[periplasm] + H+[periplasm]  ->  Na+[cytosol] + H+[cytosol]
+Unreviewed LFNDFJ_14860-MONOMER    L-leucine                UNKNOWN   
+           leucine efflux protein
+           L-leucine[cytosol]  ->  L-leucine[periplasm]
+Unreviewed LFNDFJ_11930-MONOMER    phosphate                UNKNOWN   
+           phosphate-import protein phnd
+           phosphate[periplasm]  <-  phosphate[cytosol]
+Unreviewed LFNDFJ_15850-MONOMER    a thiol group            ATP       
+           thiol reductant abc exporter subunit cydc
+           a thiol group[cytosol] + ATP + H2O  ->  a thiol group[periplasm] + ADP + phosphate + H+
+Unreviewed LFNDFJ_10650-MONOMER    L-glutamine              ATP       
+           glutamine abc transporter permease
+           ATP + L-glutamine[periplasm] + H2O  ->  ADP + L-glutamine[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_12875-MONOMER    Ca2+                     SECONDARY 
+           calcium:proton antiporter
+           Ca2+[periplasm] + H+[cytosol]  ->  Ca2+[cytosol] + H+[periplasm]
+Unreviewed LFNDFJ_02665-MONOMER    an oligopeptide          ATP       
+           oligopeptide transport system permease protein oppc
+           an oligopeptide[periplasm] + ATP + H2O  ->  an oligopeptide[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_15775-MONOMER    Na+                      SECONDARY 
+           sodium/hydrogen exchanger family
+           Na+[periplasm] + 2 H+[cytosol]  <-->  Na+[cytosol] + 2 H+[periplasm]
+Unreviewed LFNDFJ_14915-MONOMER    Na+                      ATP       
+           sodium abc transporter permease
+           Na+[periplasm] + ATP + H2O  ->  Na+[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_12215-MONOMER    chloramphenicol          UNKNOWN   
+           chloramphenicol efflux pump
+           chloramphenicol[cytosol]  ->  chloramphenicol[periplasm]
+Unreviewed LFNDFJ_15750-MONOMER 1  nitrate                  UNKNOWN   
+           nitrate/nitrite transporter
+           nitrate[periplasm]  ->  nitrate[cytosol]
+Unreviewed LFNDFJ_15750-MONOMER 2  nitrite                  UNKNOWN   
+           nitrate/nitrite transporter
+           nitrite[periplasm]  <-  nitrite[cytosol]
+Unreviewed LFNDFJ_09330-MONOMER 1  Zn2+                     UNKNOWN   
+           putative co/zn/cd cation transporter
+           Zn2+[periplasm]  ->  Zn2+[cytosol]
+Unreviewed LFNDFJ_09330-MONOMER 2  Cd2+                     UNKNOWN   
+           putative co/zn/cd cation transporter
+           Cd2+[periplasm]  ->  Cd2+[cytosol]
+Unreviewed LFNDFJ_14185-MONOMER 1  Mg2+                     UNKNOWN   
+           magnesium/cobalt transporter cora
+           Mg2+[periplasm]  ->  Mg2+[cytosol]
+Unreviewed LFNDFJ_14185-MONOMER 2  Co2+                     UNKNOWN   
+           magnesium/cobalt transporter cora
+           Several possible reactions available for import
+Unreviewed LFNDFJ_11395-MONOMER    arsenite                 UNKNOWN   
+           acr3 family arsenite efflux transporter
+           arsenite[cytosol]  ->  arsenite[periplasm]
+Unreviewed LFNDFJ_09725-MONOMER 1  L-methionine             UNKNOWN   
+           methionine/alanine import family nss transporter small subunit
+           L-methionine[periplasm]  ->  L-methionine[cytosol]
+Unreviewed LFNDFJ_09725-MONOMER 2  L-alanine                UNKNOWN   
+           methionine/alanine import family nss transporter small subunit
+           L-alanine[periplasm]  <-  L-alanine[cytosol]
+Unreviewed LFNDFJ_05945-MONOMER    Ni2+                     ATP       
+           nickel transport system permease protein nikc
+           Ni2+[periplasm] + ATP + H2O  ->  Ni2+[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_11920-MONOMER    phosphonate              ATP       
+           phosphonate abc transporter, permease protein phne
+           phosphonate[periplasm] + ATP + H2O  ->  phosphonate[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_07835-MONOMER    a dipeptide              ATP       
+           dipeptide transport system permease protein dppb
+           ATP + a dipeptide[periplasm] + H2O  ->  ADP + a dipeptide[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_09190-MONOMER    enterobactin             ATP       
+           enterochelin abc transporter permease
+           enterobactin[periplasm] + ATP + H2O  ->  enterobactin[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_15895-MONOMER    molybdate                ATP       
+           molybdate abc transporter permease subunit
+           ATP + molybdate[periplasm] + H2O  ->  ADP + molybdate[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_03410-MONOMER    ammonia                  CHANNEL   
+           ammonia channel protein
+           ammonia[periplasm]  <-->  ammonia[cytosol]
+Unreviewed LFNDFJ_16470-MONOMER 1  L-threonine              UNKNOWN   
+           putative threonine/serine exporter
+           L-threonine[cytosol]  ->  L-threonine[periplasm]
+Unreviewed LFNDFJ_16470-MONOMER 2  L-serine                 UNKNOWN   
+           putative threonine/serine exporter
+           L-serine[cytosol]  ->  L-serine[periplasm]
+Unreviewed LFNDFJ_04965-MONOMER    riboflavin               UNKNOWN   
+           riboflavin transporter rfnt
+           riboflavin[periplasm]  ->  riboflavin[cytosol]
+Unreviewed LFNDFJ_02670-MONOMER    a dipeptide              ATP       
+           dipeptide transport system permease protein dppb
+           ATP + a dipeptide[periplasm] + H2O  ->  ADP + a dipeptide[cytosol] + phosphate + H+
+Unreviewed LFNDFJ_14430-MONOMER    D-fructose               UNKNOWN   
+           fructose transport system substrate-binding protein
+           D-fructose[periplasm]  ->  D-fructose[cytosol]
+Unreviewed LFNDFJ_13930-MONOMER 1  D-serine                 UNKNOWN   
+           d-serine/d-alanine/glycine transporter
+           D-serine[periplasm]  ->  D-serine[cytosol]
+Unreviewed LFNDFJ_13930-MONOMER 2  D-alanine                UNKNOWN   
+           d-serine/d-alanine/glycine transporter
+           D-alanine[periplasm]  ->  D-alanine[cytosol]
+Unreviewed LFNDFJ_13930-MONOMER 3  glycine                  UNKNOWN   
+           d-serine/d-alanine/glycine transporter
+           glycine[periplasm]  <-->  glycine[cytosol]
+Unreviewed LFNDFJ_12090-MONOMER    Ni2+                     ATP       
+           peptide/nickel transport system permease protein
+           Ni2+[periplasm] + ATP + H2O  ->  Ni2+[cytosol] + ADP + phosphate + H+
+Unreviewed LFNDFJ_18990-MONOMER    acetate                  SECONDARY 
+           cation/acetate symporter actp
+           acetate[periplasm]  ->  acetate[cytosol]
+Unreviewed LFNDFJ_15295-MONOMER    sulfite                  UNKNOWN   
+           sulfite exporter taue/safe
+           sulfite[cytosol]  ->  sulfite[periplasm]
+Unreviewed LFNDFJ_01645-MONOMER    Cu2+                     ATP       
+           abc-type transport system involved in multi-copper enzyme maturation, permease component
+           Cu2+[periplasm] + ATP + H2O  ->  Cu2+[cytosol] + ADP + phosphate + H+
+
+
+Unreviewed LFNDFJ_00105-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00235-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00240-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00280-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00285-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00290-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00350-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00385-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00390-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00520-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00525-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00560-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00640-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00645-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00650-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00700-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00750-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00810-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00815-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00855-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00890-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_00980-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_01010-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_01140-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_01240-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_01245-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_01250-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_01410-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02150-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02155-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02160-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02370-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02375-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02380-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02430-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02435-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02645-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02730-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02835-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02860-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_02955-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_03590-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_03595-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_03650-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_03970-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_04465-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_04795-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_04985-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05055-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05090-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05280-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05320-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05345-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05740-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05785-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05815-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05820-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05825-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05935-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_05940-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06000-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06035-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06215-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06295-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06385-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06705-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06710-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06720-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06800-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06850-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_06990-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07045-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07140-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07235-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07240-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07245-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07270-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07280-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07320-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07585-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07605-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07740-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07745-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07770-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07775-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07830-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07840-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07890-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_07980-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08120-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08125-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08140-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08145-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08235-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08590-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08715-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08775-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08780-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08785-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08805-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08810-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08815-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08850-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08990-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_08995-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09000-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09015-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09020-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09025-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09065-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09105-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09150-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09195-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09200-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09230-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09320-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09365-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09370-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09405-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09470-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09705-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09730-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_09755-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10365-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10400-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10435-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10570-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10620-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10660-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10735-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10740-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10785-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10790-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10855-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10860-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10875-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10925-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_10935-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11015-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11040-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11045-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11050-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11150-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11155-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11230-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11240-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11330-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11370-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11510-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11550-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11555-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11625-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11675-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11825-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11830-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11835-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11895-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11950-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11955-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_11960-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12085-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12110-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12145-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12150-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12155-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12240-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12360-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12405-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12460-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12515-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12555-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12560-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12600-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12620-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12790-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12880-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12885-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_12935-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13090-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13270-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13275-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13380-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13385-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13445-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13450-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13455-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13545-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13755-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13760-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13765-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13820-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13825-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13895-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13900-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13905-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_13935-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14005-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14030-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14085-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14105-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14200-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14230-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14250-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14255-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14285-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14295-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14300-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14320-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14380-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14390-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14400-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14500-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14515-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14520-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14540-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14600-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14610-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14715-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14720-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14745-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14750-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14755-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_14880-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15065-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15255-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15260-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15265-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15375-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15560-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15645-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15700-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15705-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_15855-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16085-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16175-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16185-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16350-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16550-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16555-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16615-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16620-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16625-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16705-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16730-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16735-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16740-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_16865-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17050-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17075-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17265-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17315-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17325-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17465-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17475-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17695-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17700-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17705-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17725-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17795-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17805-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17875-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17935-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_17940-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_18015-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_18020-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_18025-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_18050-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_18125-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_18200-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_18810-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_18825-MONOMER  (no substrate identified)
+Unreviewed LFNDFJ_18890-MONOMER  (no substrate identified)
