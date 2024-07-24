@@ -1,0 +1,65 @@
+;;;      ---  Trial Parse Results for Microbacterium  ---
+;;;
+;;; This report summarizes the findings of the PathoLogic parser for
+;;; the annotation files selected by the user for trial parsing.
+;;; Through inspection of this report, the user can tell whether features of major
+;;; importance were not recognized, possibly due to syntax errors or other
+;;; problems in the annotation files.
+;;;
+;;; If you want to change annotation file(s) to improve their parsability, 
+;;; update the annotation files.
+;;; Then, re-run the Trial Parse command.
+
+
+;;; -----------------------------------------------------------
+
+;;; Parsing results for annotation file:
+;;;        /Users/mahs128/ptools-local/pgdbs/user/csc031cyc/27.5/input/consensus_cov.gbff
+
+;;;
+;;; The annotation file used by the parser is:
+;;; /Users/mahs128/ptools-local/pgdbs/user/csc031cyc/27.5/input/consensus_cov.gbff
+
+;;; This section of the report summarizes the frequency with which different information
+;;; fields were encountered in the annotation file.
+gene-IDs :                      3808
+gene-name :                      613
+gene-startbase :                3808
+gene-endbase :                  3808
+gene-product-type :             3808
+  gene-Proteins :                 3742
+  gene-Pseudogene :                  9
+  gene-tRNAs :                      47
+  gene-rRNAs :                       6
+  gene-snRNAs :                      0
+  gene-snoRNAs :                     0
+  gene-miscRNAs :                    3
+product-IDs :                      0 [cannot be supplied in Genbank files]
+product-accessions :               0 [cannot be supplied in Genbank files]
+product-names :                 3808
+product-synonyms :                 0 [cannot be supplied in Genbank files]
+total EC numbers :                 0
+  genes with an EC number :          0
+  genes with >1 EC numbers :         0
+total supplied MetaCyc reaction ids :       0
+  genes with a supplied MetaCyc reaction id :       0
+  genes with >1 supplied MetaCyc reaction id :       0
+total GO terms linked to reactions :       1
+  genes with a GO term linked to reactions :       1
+  genes with >1 GO terms linked to reactions :       0
+gene-products:
+  hypothetical :                   554
+  predicted :                        0
+  putative :                        10
+genes with synonyms :              0
+
+;;;; :::::::: Ignored gene features and qualifiers ::::::::
+
+The Annotation file contains these additional features,
+which have not been processed:
+(regulatory)
+The Annotation file contains these additional feature qualifiers,
+which have not been processed:
+(/ncRNA_class= /regulatory_class= /transl_table= /codon_start=
+ /translation= /inference= /mol_type=)
+

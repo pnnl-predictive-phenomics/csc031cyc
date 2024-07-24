@@ -1,0 +1,695 @@
+##	Complex Inference Report: The results of computationally predicting protein complexes.
+##	
+##	For CSC031 version 27.5  'Microbacterium'  on Wed Jun 26, 2024
+##	
+##	
+##	
+####	Summary Statistics
+##	
+CPLX-COUNT-TOTAL-INF	Total count of complexes inferred and newly created	118
+CPLX-COUNT-RXN-BASED	Complexes inferred, created by SHARED REACTIONS	9
+CPLX-COUNT-HYBRID	Complexes created by SHARED REACTIONS and augmented by NAME STRING ANALYSIS	20
+CPLX-COUNT-NAME-BASED	Complexes inferred, created by NAME STRING ANALYSIS	4
+CPLX-COUNT-ABC	Complexes created by ABC TRANSPORTER ANALYSIS	85
+CPLX-COUNT-PRE-EXISTING	Complexes that pre-existed in the PGDB	2
+PP-COUNT-OF-INF-CPLXS	Total count of polypeptides (monomers) in the inferred complexes	296
+PP-LONELY	Polypeptides containing subunit-related words, but with no matching sibling subunits	63
+PP-NOT-RECOGNIZED	Unique polypeptides, NOT recognized as subunit candidates	3342
+PP-INPUT-COUNT	Polypeptide count of the input to complex-inference	3733
+##	
+####	Complexes created, inferred by SHARED REACTIONS
+##	
+##	This first mechanism for inference of protein complexes focuses on multiple polypeptides that
+##	catalyze a common reaction.  A complex is inferred for each set of subunits that catalyze the
+##	same reaction(s), contain subunit-related words in their names, and whose genes are near one
+##	another in the genome. After the complex inference, the reactions are marked as catalyzed
+##	by the complexes instead of by the polypeptides.
+##	
+CPLX-BY-SHARED-RXNS	ADP-forming succinate--CoA ligase	CPLX56SW5V-29
+SUBUNIT-OF-CPLX	ADP-forming succinate--CoA ligase subunit beta	LFNDFJ_07910-MONOMER
+SUBUNIT-OF-CPLX	succinate--CoA ligase subunit alpha	LFNDFJ_07905-MONOMER
+##	
+CPLX-BY-SHARED-RXNS	Cytochrome BD ubiquinol oxidase	CPLX56SW5V-14
+SUBUNIT-OF-CPLX	Cytochrome BD ubiquinol oxidase subunit I	LFNDFJ_15835-MONOMER
+SUBUNIT-OF-CPLX	cytochrome d ubiquinol oxidase subunit II	LFNDFJ_15840-MONOMER
+##	
+CPLX-BY-SHARED-RXNS	Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase	CPLX56SW5V-27
+SUBUNIT-OF-CPLX	Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase complex	LFNDFJ_07445-MONOMER
+SUBUNIT-OF-CPLX	pyruvate dehydrogenase (acetyl-transferring) E1 component subunit alpha	LFNDFJ_07435-MONOMER
+##	
+CPLX-BY-SHARED-RXNS	Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase	CPLX56SW5V-24
+SUBUNIT-OF-CPLX	Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex	LFNDFJ_04175-MONOMER
+SUBUNIT-OF-CPLX	Pyruvate dehydrogenase (E1 beta subunit)	LFNDFJ_04180-MONOMER
+##	
+CPLX-BY-SHARED-RXNS	Na(+)/H(+) antiporter	CPLX56SW5V-7
+SUBUNIT-OF-CPLX	Na(+)/H(+) antiporter subunit C	LFNDFJ_12770-MONOMER
+SUBUNIT-OF-CPLX	Na(+)/H(+) antiporter subunit F	LFNDFJ_12755-MONOMER
+SUBUNIT-OF-CPLX	Na+/H+ antiporter subunit A	LFNDFJ_12775-MONOMER
+SUBUNIT-OF-CPLX	Na+/H+ antiporter subunit D	LFNDFJ_12765-MONOMER
+SUBUNIT-OF-CPLX	Na+/H+ antiporter subunit E	LFNDFJ_12760-MONOMER
+##	
+CPLX-BY-SHARED-RXNS	carbamoyl phosphate synthase	CPLX56SW5V-8
+SUBUNIT-OF-CPLX	carbamoyl phosphate synthase small subunit	LFNDFJ_03815-MONOMER
+SUBUNIT-OF-CPLX	carbamoyl-phosphate synthase large subunit	LFNDFJ_03820-MONOMER
+##	
+CPLX-BY-SHARED-RXNS	pyridoxal 5'-phosphate synthase	CPLX56SW5V-31
+SUBUNIT-OF-CPLX	pyridoxal 5'-phosphate synthase glutaminase subunit PdxT	LFNDFJ_03570-MONOMER
+SUBUNIT-OF-CPLX	pyridoxal 5'-phosphate synthase lyase subunit PdxS	LFNDFJ_03565-MONOMER
+##	
+CPLX-BY-SHARED-RXNS	pyruvate dehydrogenase (acetyl-transferring) E1	CPLX56SW5V-26
+SUBUNIT-OF-CPLX	Pyruvate dehydrogenase (E1 beta subunit)	LFNDFJ_04180-MONOMER
+SUBUNIT-OF-CPLX	pyruvate dehydrogenase (acetyl-transferring) E1 component subunit alpha	LFNDFJ_04185-MONOMER
+##	
+CPLX-BY-SHARED-RXNS	tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex	CPLX56SW5V-21
+SUBUNIT-OF-CPLX	tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex dimerization subunit type 1 TsaB	LFNDFJ_08185-MONOMER
+SUBUNIT-OF-CPLX	tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex transferase subunit TsaD	LFNDFJ_08175-MONOMER
+##	
+##	
+####	Complexes created by SHARED REACTIONS and augmented by NAME STRING ANALYSIS
+##	
+##	After complexes were created by shared reactions, sometimes the inference
+##	by name analysis may also find matches with one of the previously created complexes,
+##	given that all polypeptide name strings are analyzed, even of those polypeptides that are
+##	already in a complex.  In such a match, additional polypeptides will be added to the complex
+##	that was based merely on shared reactions, instead of creating a separate but partial complex.
+##	
+CPLX-HYBRID	1,2-phenylacetyl-CoA epoxidase	CPLX56SW5V-6
+SUBUNIT-OF-CPLX	1,2-phenylacetyl-CoA epoxidase subunit A	LFNDFJ_07515-MONOMER
+SUBUNIT-OF-CPLX	1,2-phenylacetyl-CoA epoxidase subunit B	LFNDFJ_07520-MONOMER
+SUBUNIT-OF-CPLX	Phenylacetate-CoA oxygenase/reductase subunit PaaK	LFNDFJ_07535-MONOMER
+SUBUNIT-OF-CPLX	phenylacetate-CoA oxygenase subunit PaaC	LFNDFJ_07525-MONOMER
+##	
+CPLX-HYBRID	3-isopropylmalate dehydratase	CPLX56SW5V-18
+SUBUNIT-OF-CPLX	3-isopropylmalate dehydratase large subunit	LFNDFJ_04870-MONOMER
+SUBUNIT-OF-CPLX	3-isopropylmalate dehydratase small subunit	LFNDFJ_04865-MONOMER
+##	
+CPLX-HYBRID	3-methyl-2-oxobutanoate dehydrogenase	CPLX56SW5V-23
+SUBUNIT-OF-CPLX	3-methyl-2-oxobutanoate dehydrogenase subunit alpha	LFNDFJ_14065-MONOMER
+SUBUNIT-OF-CPLX	3-methyl-2-oxobutanoate dehydrogenase subunit beta	LFNDFJ_14070-MONOMER
+##	
+CPLX-HYBRID	5-oxoprolinase	CPLX56SW5V-28
+SUBUNIT-OF-CPLX	5-oxoprolinase subunit A	LFNDFJ_10700-MONOMER
+SUBUNIT-OF-CPLX	5-oxoprolinase subunit PxpB	LFNDFJ_10695-MONOMER
+##	
+CPLX-HYBRID	ATP-dependent Clp protease	CPLX56SW5V-11
+SUBUNIT-OF-CPLX	ATP-dependent Clp protease proteolytic subunit	LFNDFJ_13970-MONOMER
+SUBUNIT-OF-CPLX	ATP-dependent Clp protease proteolytic subunit	LFNDFJ_13975-MONOMER
+##	
+CPLX-HYBRID	ATP-dependent Clp protease	CPLX56SW5V-10
+SUBUNIT-OF-CPLX	ATP-dependent Clp protease ATP-binding subunit ClpX	LFNDFJ_02320-MONOMER
+SUBUNIT-OF-CPLX	ATP-dependent Clp protease proteolytic subunit	LFNDFJ_02290-MONOMER
+SUBUNIT-OF-CPLX	ATP-dependent Clp protease proteolytic subunit	LFNDFJ_02295-MONOMER
+##	
+CPLX-HYBRID	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase	CPLX56SW5V-19
+SUBUNIT-OF-CPLX	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatA	LFNDFJ_04380-MONOMER
+SUBUNIT-OF-CPLX	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatB	LFNDFJ_04375-MONOMER
+SUBUNIT-OF-CPLX	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatC	LFNDFJ_04385-MONOMER
+##	
+CPLX-HYBRID	Dihydroxyacetone kinase	CPLX56SW5V-15
+SUBUNIT-OF-CPLX	Dihydroxyacetone kinase subunit L	LFNDFJ_07490-MONOMER
+SUBUNIT-OF-CPLX	dihydroxyacetone kinase subunit DhaK	LFNDFJ_07495-MONOMER
+##	
+CPLX-HYBRID	F0F1 ATP synthase	CPLX56SW5V-22
+SUBUNIT-OF-CPLX	ATP synthase F0 subunit C	LFNDFJ_05600-MONOMER
+SUBUNIT-OF-CPLX	F0F1 ATP synthase subunit A	LFNDFJ_05605-MONOMER
+SUBUNIT-OF-CPLX	F0F1 ATP synthase subunit B	LFNDFJ_05595-MONOMER
+SUBUNIT-OF-CPLX	F0F1 ATP synthase subunit alpha	LFNDFJ_05585-MONOMER
+SUBUNIT-OF-CPLX	F0F1 ATP synthase subunit beta	LFNDFJ_05575-MONOMER
+SUBUNIT-OF-CPLX	F0F1 ATP synthase subunit delta	LFNDFJ_05590-MONOMER
+SUBUNIT-OF-CPLX	F0F1 ATP synthase subunit epsilon	LFNDFJ_05570-MONOMER
+SUBUNIT-OF-CPLX	F0F1 ATP synthase subunit gamma	LFNDFJ_05580-MONOMER
+##	
+CPLX-HYBRID	Na+/H+ antiporter	CPLX56SW5V-9
+SUBUNIT-OF-CPLX	Na(+)/H(+) antiporter subunit C	LFNDFJ_12770-MONOMER
+SUBUNIT-OF-CPLX	Na(+)/H(+) antiporter subunit F	LFNDFJ_12755-MONOMER
+SUBUNIT-OF-CPLX	Na+/H+ antiporter subunit A	LFNDFJ_12775-MONOMER
+SUBUNIT-OF-CPLX	Na+/H+ antiporter subunit D	LFNDFJ_12765-MONOMER
+SUBUNIT-OF-CPLX	Na+/H+ antiporter subunit E	LFNDFJ_12760-MONOMER
+SUBUNIT-OF-CPLX	monovalent cation/H(+) antiporter subunit G	LFNDFJ_12750-MONOMER
+##	
+CPLX-HYBRID	acetolactate synthase	CPLX56SW5V-16
+SUBUNIT-OF-CPLX	acetolactate synthase large subunit	LFNDFJ_05035-MONOMER
+SUBUNIT-OF-CPLX	acetolactate synthase small subunit	LFNDFJ_05030-MONOMER
+##	
+CPLX-HYBRID	carbamoyl-phosphate synthase	CPLX56SW5V-32
+SUBUNIT-OF-CPLX	Imidazole glycerol phosphate synthase subunit HisF	LFNDFJ_03875-MONOMER
+SUBUNIT-OF-CPLX	carbamoyl phosphate synthase small subunit	LFNDFJ_03815-MONOMER
+SUBUNIT-OF-CPLX	carbamoyl-phosphate synthase large subunit	LFNDFJ_03820-MONOMER
+##	
+CPLX-HYBRID	class 1b ribonucleoside-diphosphate reductase	CPLX56SW5V-33
+SUBUNIT-OF-CPLX	class 1b ribonucleoside-diphosphate reductase subunit alpha	LFNDFJ_00120-MONOMER
+SUBUNIT-OF-CPLX	class 1b ribonucleoside-diphosphate reductase subunit beta	LFNDFJ_00125-MONOMER
+##	
+CPLX-HYBRID	cytochrome c oxidase	CPLX56SW5V-13
+SUBUNIT-OF-CPLX	Cytochrome c oxidase polypeptide 4	LFNDFJ_02080-MONOMER
+SUBUNIT-OF-CPLX	cytochrome c oxidase subunit I	LFNDFJ_02075-MONOMER
+SUBUNIT-OF-CPLX	cytochrome c oxidase subunit II	LFNDFJ_02070-MONOMER
+##	
+CPLX-HYBRID	excinuclease ABC	CPLX56SW5V-17
+SUBUNIT-OF-CPLX	excinuclease ABC subunit UvrA	LFNDFJ_02210-MONOMER
+SUBUNIT-OF-CPLX	excinuclease ABC subunit UvrB	LFNDFJ_02190-MONOMER
+SUBUNIT-OF-CPLX	excinuclease ABC subunit UvrC	LFNDFJ_02215-MONOMER
+##	
+CPLX-HYBRID	exodeoxyribonuclease VII	CPLX56SW5V-20
+SUBUNIT-OF-CPLX	exodeoxyribonuclease VII large subunit	LFNDFJ_06980-MONOMER
+SUBUNIT-OF-CPLX	exodeoxyribonuclease VII small subunit	LFNDFJ_06985-MONOMER
+##	
+CPLX-HYBRID	phenylalanine--tRNA ligase	CPLX56SW5V-5
+SUBUNIT-OF-CPLX	phenylalanine--tRNA ligase subunit alpha	LFNDFJ_01255-MONOMER
+SUBUNIT-OF-CPLX	phenylalanine--tRNA ligase subunit beta	LFNDFJ_01260-MONOMER
+##	
+CPLX-HYBRID	phosphoribosylformylglycinamidine synthase	CPLX56SW5V-30
+SUBUNIT-OF-CPLX	phosphoribosylformylglycinamidine synthase subunit PurL	LFNDFJ_11875-MONOMER
+SUBUNIT-OF-CPLX	phosphoribosylformylglycinamidine synthase subunit PurQ	LFNDFJ_10760-MONOMER
+SUBUNIT-OF-CPLX	phosphoribosylformylglycinamidine synthase subunit PurS	LFNDFJ_10755-MONOMER
+##	
+CPLX-HYBRID	potassium-transporting ATPase	CPLX56SW5V-25
+SUBUNIT-OF-CPLX	potassium-transporting ATPase subunit B	LFNDFJ_10980-MONOMER
+SUBUNIT-OF-CPLX	potassium-transporting ATPase subunit KdpA	LFNDFJ_10975-MONOMER
+SUBUNIT-OF-CPLX	potassium-transporting ATPase subunit KdpC	LFNDFJ_10985-MONOMER
+##	
+CPLX-HYBRID	succinate dehydrogenase	CPLX56SW5V-12
+SUBUNIT-OF-CPLX	succinate dehydrogenase flavoprotein subunit	LFNDFJ_00780-MONOMER
+SUBUNIT-OF-CPLX	succinate dehydrogenase iron-sulfur subunit	LFNDFJ_00775-MONOMER
+SUBUNIT-OF-CPLX	succinate dehydrogenase, cytochrome b556 subunit	LFNDFJ_00790-MONOMER
+##	
+##	
+####	Complexes created, inferred by NAME STRING ANALYSIS
+##	
+##	This third mechanism for inference of protein complexes analyzes shared subunit-related
+##	words in the names of several polypeptides. First, polypeptides are grouped together by
+##	shared 'core strings.' A core string aims to capture the core function of a polypeptide
+##	and is derived from a polypeptide name by removing subunit-related words and other
+##	extraneous markup (for example, the core string for 'tryptophan synthase, subunit alpha'
+##	is simply 'tryptophan synthase'). Next, a complex is created for each such a polypeptide
+##	grouping unless all polypeptides have identical names.
+##	
+CPLX-BY-CORE-STRINGS	Assimilatory nitrate reductase	CPLX56SW5V-122
+SUBUNIT-OF-CPLX	Assimilatory nitrate reductase catalytic subunit	LFNDFJ_15740-MONOMER
+SUBUNIT-OF-CPLX	Assimilatory nitrate reductase electron transfer subunit	LFNDFJ_15745-MONOMER
+##	
+CPLX-BY-CORE-STRINGS	DNA polymerase III	CPLX56SW5V-124
+SUBUNIT-OF-CPLX	DNA polymerase III subunit alpha	LFNDFJ_02030-MONOMER
+SUBUNIT-OF-CPLX	DNA polymerase III subunit beta	LFNDFJ_13165-MONOMER
+SUBUNIT-OF-CPLX	DNA polymerase III subunit delta	LFNDFJ_02630-MONOMER
+SUBUNIT-OF-CPLX	DNA polymerase III subunit delta'	LFNDFJ_18315-MONOMER
+SUBUNIT-OF-CPLX	DNA polymerase III subunit epsilon	LFNDFJ_06935-MONOMER
+##	
+CPLX-BY-CORE-STRINGS	Ribosomal RNA small subunit methyltransferase	CPLX56SW5V-121
+SUBUNIT-OF-CPLX	Ribosomal RNA small subunit methyltransferase C	LFNDFJ_05135-MONOMER
+SUBUNIT-OF-CPLX	Ribosomal RNA small subunit methyltransferase G	LFNDFJ_13200-MONOMER
+##	
+CPLX-BY-CORE-STRINGS	tryptophan synthase	CPLX56SW5V-123
+SUBUNIT-OF-CPLX	tryptophan synthase subunit alpha	LFNDFJ_03905-MONOMER
+SUBUNIT-OF-CPLX	tryptophan synthase subunit beta	LFNDFJ_03900-MONOMER
+##	
+##	
+####	Complexes created, inferred by ABC TRANSPORTER ANALYSIS
+##	
+##	This specialized protein complex inference mechanism analyzes the subunits
+##	in one operon, of which some subunits contain the substring 'ABC transport'.
+##	Other subunits in the operon are added to the complex, if they contain words like
+##	'permease', 'ATP-binding', 'substrate binding', or 'periplasmic binding'.
+##	
+CPLX-ABC-TRANSPORT	ABC transmembrane type-1 domain-containing	CPLX56SW5V-51
+SUBUNIT-OF-CPLX	ABC transmembrane type-1 domain-containing protein	LFNDFJ_12520-MONOMER
+SUBUNIT-OF-CPLX	ABC transmembrane type-1 domain-containing protein	LFNDFJ_12525-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter substrate-binding protein	LFNDFJ_12515-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transmembrane type-1 domain-containing	CPLX56SW5V-64
+SUBUNIT-OF-CPLX	ABC transmembrane type-1 domain-containing protein	LFNDFJ_10425-MONOMER
+SUBUNIT-OF-CPLX	ABC transmembrane type-1 domain-containing protein	LFNDFJ_10430-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_10435-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-35
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_17300-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_17305-MONOMER
+SUBUNIT-OF-CPLX	Fe(3+)-dicitrate ABC transporter ATP-binding protein	LFNDFJ_17310-MONOMER
+SUBUNIT-OF-CPLX	Fe(3+)-siderophore ABC transporter permease	LFNDFJ_17320-MONOMER
+SUBUNIT-OF-CPLX	iron ABC transporter permease	LFNDFJ_17315-MONOMER
+SUBUNIT-OF-CPLX	iron-siderophore ABC transporter substrate-binding protein	LFNDFJ_17325-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-49
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_00235-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_00240-MONOMER
+SUBUNIT-OF-CPLX	Sugar ABC transporter ATP-binding protein	LFNDFJ_00230-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-42
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_10740-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_10735-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-41
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_07240-MONOMER
+SUBUNIT-OF-CPLX	Sugar ABC transporter permease	LFNDFJ_07235-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter substrate-binding protein	LFNDFJ_07245-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-38
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_16730-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_16740-MONOMER
+SUBUNIT-OF-CPLX	Sugar ABC transporter permease	LFNDFJ_16735-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-54
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_13375-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_13380-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_13385-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-60
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_16560-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_16565-MONOMER
+SUBUNIT-OF-CPLX	Amino acid ABC transporter permease	LFNDFJ_16550-MONOMER
+SUBUNIT-OF-CPLX	High-affinity branched-chain amino acid transport system permease protein LivH	LFNDFJ_16555-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-105
+SUBUNIT-OF-CPLX	ABC transmembrane type-1 domain-containing protein	LFNDFJ_13265-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_13260-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_13270-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_13275-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-103
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_11835-MONOMER
+SUBUNIT-OF-CPLX	Multiple sugar transport system substrate-binding protein	LFNDFJ_11825-MONOMER
+SUBUNIT-OF-CPLX	Permease	LFNDFJ_11830-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-102
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_00810-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_00815-MONOMER
+SUBUNIT-OF-CPLX	heme ABC transporter ATP-binding protein	LFNDFJ_00805-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-99
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_05950-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_05940-MONOMER
+SUBUNIT-OF-CPLX	Nickel transport system permease protein NikC	LFNDFJ_05945-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter substrate-binding protein	LFNDFJ_05935-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-98
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_09085-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_09090-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-97
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_07840-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_07830-MONOMER
+SUBUNIT-OF-CPLX	Dipeptide transport system permease protein DppB	LFNDFJ_07835-MONOMER
+SUBUNIT-OF-CPLX	Dipeptide/oligopeptide/nickel ABC transporter ATP-binding protein	LFNDFJ_07845-MONOMER
+SUBUNIT-OF-CPLX	Oligopeptide transport ATP-binding protein OppF	LFNDFJ_07850-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-95
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_07310-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_07320-MONOMER
+SUBUNIT-OF-CPLX	ATP-binding cassette domain-containing protein	LFNDFJ_07315-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-94
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_13760-MONOMER
+SUBUNIT-OF-CPLX	carbohydrate ABC transporter permease	LFNDFJ_13755-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-92
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_09060-MONOMER
+SUBUNIT-OF-CPLX	Transport permease protein	LFNDFJ_09065-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-91
+SUBUNIT-OF-CPLX	Putative ABC transporter ATP-binding protein YxlF	LFNDFJ_14920-MONOMER
+SUBUNIT-OF-CPLX	Sodium ABC transporter permease	LFNDFJ_14915-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-89
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_12570-MONOMER
+SUBUNIT-OF-CPLX	Osmoprotectant (Glycine betaine/carnitine/choline/L-proline) ABC transporter inner membrane subunit	LFNDFJ_12565-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-88
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_08995-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease subunit	LFNDFJ_09000-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_08990-MONOMER
+SUBUNIT-OF-CPLX	spermidine/putrescine ABC transporter ATP-binding protein	LFNDFJ_09005-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-86
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_04790-MONOMER
+SUBUNIT-OF-CPLX	Permease	LFNDFJ_04795-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-85
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_11150-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_11155-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-84
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_09020-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_09025-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-82
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_00640-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_00645-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-81
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_06785-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_06790-MONOMER
+SUBUNIT-OF-CPLX	Oligopeptide transport system permease protein OppC	LFNDFJ_06795-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_06800-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-80
+SUBUNIT-OF-CPLX	Putative ABC transporter ATP-binding protein	LFNDFJ_15245-MONOMER
+SUBUNIT-OF-CPLX	multidrug ABC transporter ATP-binding protein	LFNDFJ_15240-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-79
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_12560-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_12555-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-78
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_16360-MONOMER
+SUBUNIT-OF-CPLX	Dipeptide/oligopeptide/nickel ABC transporter permease/ATP-binding protein	LFNDFJ_16355-MONOMER
+SUBUNIT-OF-CPLX	Peptide ABC transporter permease	LFNDFJ_16350-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-75
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_02160-MONOMER
+SUBUNIT-OF-CPLX	aliphatic sulfonates ABC transporter substrate-binding protein	LFNDFJ_02155-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-73
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_02375-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_02380-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-72
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_06380-MONOMER
+SUBUNIT-OF-CPLX	Transport permease protein	LFNDFJ_06385-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-70
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_16620-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_16615-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-68
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_07590-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_07585-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ABC transporter	CPLX56SW5V-66
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_14090-MONOMER
+SUBUNIT-OF-CPLX	High-affinity zinc uptake system membrane protein ZnuB	LFNDFJ_14095-MONOMER
+SUBUNIT-OF-CPLX	Metal ABC transporter substrate-binding protein	LFNDFJ_14085-MONOMER
+##	
+CPLX-ABC-TRANSPORT	ATP-binding cassette domain-containing	CPLX56SW5V-69
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_18125-MONOMER
+SUBUNIT-OF-CPLX	ATP-binding cassette domain-containing protein	LFNDFJ_18120-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Daunorubicin/doxorubicin resistance	CPLX56SW5V-90
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_17265-MONOMER
+SUBUNIT-OF-CPLX	Daunorubicin/doxorubicin resistance ATP-binding protein DrrA	LFNDFJ_17270-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Export ABC transporter	CPLX56SW5V-65
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_12405-MONOMER
+SUBUNIT-OF-CPLX	Export ABC transporter ATP-binding protein	LFNDFJ_12400-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Glutathione import	CPLX56SW5V-71
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_02430-MONOMER
+SUBUNIT-OF-CPLX	Glutathione import ATP-binding protein GsiA	LFNDFJ_02440-MONOMER
+SUBUNIT-OF-CPLX	Peptide ABC transporter permease	LFNDFJ_02435-MONOMER
+##	
+CPLX-ABC-TRANSPORT	High-affinity branched-chain amino acid transport	CPLX56SW5V-76
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_08130-MONOMER
+SUBUNIT-OF-CPLX	Amino acid ABC transporter substrate-binding protein	LFNDFJ_08140-MONOMER
+SUBUNIT-OF-CPLX	Amino acid/amide ABC transporter membrane protein 1, HAAT family	LFNDFJ_08120-MONOMER
+SUBUNIT-OF-CPLX	Amino acid/amide ABC transporter membrane protein 2, HAAT family	LFNDFJ_08125-MONOMER
+SUBUNIT-OF-CPLX	High-affinity branched-chain amino acid transport ATP-binding protein LivF	LFNDFJ_08135-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Inner membrane ABC transporter	CPLX56SW5V-58
+SUBUNIT-OF-CPLX	Inner membrane ABC transporter permease protein YcjP	LFNDFJ_14755-MONOMER
+SUBUNIT-OF-CPLX	Permease component of ABC-type sugar transporter	LFNDFJ_14750-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter substrate-binding protein	LFNDFJ_14745-MONOMER
+##	
+CPLX-ABC-TRANSPORT	L-arabinose transport system	CPLX56SW5V-50
+SUBUNIT-OF-CPLX	L-arabinose transport system permease protein AraQ	LFNDFJ_14720-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_14715-MONOMER
+##	
+CPLX-ABC-TRANSPORT	L-arabinose transport system	CPLX56SW5V-57
+SUBUNIT-OF-CPLX	Carbohydrate ABC transporter substrate-binding protein	LFNDFJ_18015-MONOMER
+SUBUNIT-OF-CPLX	Inner membrane ABC transporter permease protein YcjO	LFNDFJ_18020-MONOMER
+SUBUNIT-OF-CPLX	L-arabinose transport system permease protein AraQ	LFNDFJ_18025-MONOMER
+##	
+CPLX-ABC-TRANSPORT	L-cystine import	CPLX56SW5V-63
+SUBUNIT-OF-CPLX	L-cystine import ATP-binding protein TcyC	LFNDFJ_17945-MONOMER
+SUBUNIT-OF-CPLX	Polar amino acid ABC transporter substrate-binding protein	LFNDFJ_17935-MONOMER
+SUBUNIT-OF-CPLX	amino acid ABC transporter permease	LFNDFJ_17940-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Methionine import	CPLX56SW5V-74
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_00560-MONOMER
+SUBUNIT-OF-CPLX	Methionine ABC transporter substrate-binding protein	LFNDFJ_00550-MONOMER
+SUBUNIT-OF-CPLX	Methionine import ATP-binding protein MetN	LFNDFJ_00555-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Multidrug ABC transporter	CPLX56SW5V-104
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_07980-MONOMER
+SUBUNIT-OF-CPLX	Multidrug ABC transporter ATP-binding protein	LFNDFJ_07985-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Multidrug ABC transporter	CPLX56SW5V-111
+SUBUNIT-OF-CPLX	Multidrug ABC transporter ATP-binding protein	LFNDFJ_09475-MONOMER
+SUBUNIT-OF-CPLX	Transport permease protein	LFNDFJ_09470-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Multidrug ABC transporter	CPLX56SW5V-110
+SUBUNIT-OF-CPLX	ABC-type transport system involved in multi-copper enzyme maturation, permease component	LFNDFJ_01645-MONOMER
+SUBUNIT-OF-CPLX	Multidrug ABC transporter ATP-binding protein	LFNDFJ_01640-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Peptide ABC transporter	CPLX56SW5V-106
+SUBUNIT-OF-CPLX	ABC transmembrane type-1 domain-containing protein	LFNDFJ_00480-MONOMER
+SUBUNIT-OF-CPLX	Dipeptide/oligopeptide/nickel ABC transporter ATP-binding protein	LFNDFJ_00470-MONOMER
+SUBUNIT-OF-CPLX	Peptide ABC transporter ATP-binding protein	LFNDFJ_00475-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Peptide ABC transporter	CPLX56SW5V-116
+SUBUNIT-OF-CPLX	Peptide ABC transporter permease	LFNDFJ_00290-MONOMER
+SUBUNIT-OF-CPLX	TIGR04028 family ABC transporter substrate-binding protein	LFNDFJ_00280-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_00285-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Peptide ABC transporter	CPLX56SW5V-112
+SUBUNIT-OF-CPLX	Peptide ABC transporter permease	LFNDFJ_11230-MONOMER
+SUBUNIT-OF-CPLX	Peptide ABC transporter substrate-binding protein	LFNDFJ_11240-MONOMER
+SUBUNIT-OF-CPLX	nickel import ATP-binding protein NikD	LFNDFJ_11225-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Phosphonate ABC transporter	CPLX56SW5V-107
+SUBUNIT-OF-CPLX	Phosphonate ABC transporter ATP-binding protein	LFNDFJ_11925-MONOMER
+SUBUNIT-OF-CPLX	phosphonate ABC transporter, permease protein PhnE	LFNDFJ_11920-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Sugar ABC transporter	CPLX56SW5V-45
+SUBUNIT-OF-CPLX	Sugar ABC transporter permease	LFNDFJ_11950-MONOMER
+SUBUNIT-OF-CPLX	Sugar ABC transporter permease	LFNDFJ_11955-MONOMER
+SUBUNIT-OF-CPLX	Sugar ABC transporter substrate-binding protein	LFNDFJ_11960-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Sugar ABC transporter	CPLX56SW5V-40
+SUBUNIT-OF-CPLX	Carbohydrate ABC transporter permease	LFNDFJ_10785-MONOMER
+SUBUNIT-OF-CPLX	Sugar ABC transporter permease	LFNDFJ_10790-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Sugar ABC transporter	CPLX56SW5V-39
+SUBUNIT-OF-CPLX	Sugar ABC transporter permease	LFNDFJ_14295-MONOMER
+SUBUNIT-OF-CPLX	Sugar ABC transporter substrate-binding protein	LFNDFJ_14285-MONOMER
+SUBUNIT-OF-CPLX	heme ABC exporter ATP-binding protein CcmA	LFNDFJ_14290-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_14300-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Thiamine ABC transporter	CPLX56SW5V-52
+SUBUNIT-OF-CPLX	Thiamine ABC transporter ATP-binding protein	LFNDFJ_14225-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_14230-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Trehalose transport system	CPLX56SW5V-61
+SUBUNIT-OF-CPLX	Amino acid ABC transporter permease	LFNDFJ_13545-MONOMER
+SUBUNIT-OF-CPLX	Trehalose transport system permease protein SugB	LFNDFJ_13550-MONOMER
+##	
+CPLX-ABC-TRANSPORT	Xylose import	CPLX56SW5V-83
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_09705-MONOMER
+SUBUNIT-OF-CPLX	Xylose import ATP-binding protein XylG	LFNDFJ_09700-MONOMER
+##	
+CPLX-ABC-TRANSPORT	amino acid ABC transporter	CPLX56SW5V-59
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_01240-MONOMER
+SUBUNIT-OF-CPLX	amino acid ABC transporter permease	LFNDFJ_01245-MONOMER
+SUBUNIT-OF-CPLX	amino acid ABC transporter permease	LFNDFJ_01250-MONOMER
+##	
+CPLX-ABC-TRANSPORT	heme ABC transporter	CPLX56SW5V-109
+SUBUNIT-OF-CPLX	Heme ABC transporter permease	LFNDFJ_10620-MONOMER
+SUBUNIT-OF-CPLX	heme ABC transporter ATP-binding protein	LFNDFJ_10625-MONOMER
+##	
+CPLX-ABC-TRANSPORT	iron ABC transporter	CPLX56SW5V-36
+SUBUNIT-OF-CPLX	iron ABC transporter permease	LFNDFJ_09195-MONOMER
+SUBUNIT-OF-CPLX	iron ABC transporter substrate-binding protein	LFNDFJ_09200-MONOMER
+##	
+CPLX-ABC-TRANSPORT	iron ABC transporter	CPLX56SW5V-34
+SUBUNIT-OF-CPLX	enterochelin ABC transporter permease	LFNDFJ_09190-MONOMER
+SUBUNIT-OF-CPLX	iron ABC transporter ATP-binding protein	LFNDFJ_09185-MONOMER
+##	
+CPLX-ABC-TRANSPORT	multidrug ABC transporter	CPLX56SW5V-100
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_18810-MONOMER
+SUBUNIT-OF-CPLX	multidrug ABC transporter ATP-binding protein	LFNDFJ_18815-MONOMER
+##	
+CPLX-ABC-TRANSPORT	nickel import	CPLX56SW5V-96
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_02370-MONOMER
+SUBUNIT-OF-CPLX	nickel import ATP-binding protein NikD	LFNDFJ_02365-MONOMER
+##	
+CPLX-ABC-TRANSPORT	nickel import	CPLX56SW5V-87
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_08775-MONOMER
+SUBUNIT-OF-CPLX	nickel import ATP-binding protein NikD	LFNDFJ_08770-MONOMER
+##	
+CPLX-ABC-TRANSPORT	nickel import	CPLX56SW5V-77
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_12085-MONOMER
+SUBUNIT-OF-CPLX	Peptide/nickel transport system permease protein	LFNDFJ_12090-MONOMER
+SUBUNIT-OF-CPLX	nickel import ATP-binding protein NikD	LFNDFJ_12080-MONOMER
+##	
+CPLX-ABC-TRANSPORT	peptide ABC transporter	CPLX56SW5V-55
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_13460-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_13445-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_13450-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_13455-MONOMER
+##	
+CPLX-ABC-TRANSPORT	peptide ABC transporter	CPLX56SW5V-62
+SUBUNIT-OF-CPLX	Amino acid ABC transporter permease	LFNDFJ_13825-MONOMER
+SUBUNIT-OF-CPLX	amino acid ABC transporter substrate-binding protein	LFNDFJ_13820-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter ATP-binding protein	LFNDFJ_13830-MONOMER
+##	
+CPLX-ABC-TRANSPORT	peptide ABC transporter	CPLX56SW5V-93
+SUBUNIT-OF-CPLX	ABC transporter ATP-binding protein	LFNDFJ_10870-MONOMER
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_10875-MONOMER
+SUBUNIT-OF-CPLX	Oligopeptide transport ATP-binding protein OppF	LFNDFJ_10865-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_10855-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_10860-MONOMER
+##	
+CPLX-ABC-TRANSPORT	peptide ABC transporter	CPLX56SW5V-67
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_08785-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_08780-MONOMER
+##	
+CPLX-ABC-TRANSPORT	peptide ABC transporter	CPLX56SW5V-115
+SUBUNIT-OF-CPLX	glutamine ABC transporter permease	LFNDFJ_10650-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter ATP-binding protein	LFNDFJ_10645-MONOMER
+##	
+CPLX-ABC-TRANSPORT	peptide ABC transporter	CPLX56SW5V-114
+SUBUNIT-OF-CPLX	peptide ABC transporter ATP-binding protein	LFNDFJ_08855-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_08850-MONOMER
+##	
+CPLX-ABC-TRANSPORT	peptide ABC transporter	CPLX56SW5V-113
+SUBUNIT-OF-CPLX	nickel import ATP-binding protein NikE	LFNDFJ_00395-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_00385-MONOMER
+SUBUNIT-OF-CPLX	peptide ABC transporter permease	LFNDFJ_00390-MONOMER
+##	
+CPLX-ABC-TRANSPORT	phosphonate ABC transporter	CPLX56SW5V-108
+SUBUNIT-OF-CPLX	phosphate/phosphite/phosphonate ABC transporter substrate-binding protein	LFNDFJ_16975-MONOMER
+SUBUNIT-OF-CPLX	phosphonate ABC transporter ATP-binding protein	LFNDFJ_16980-MONOMER
+SUBUNIT-OF-CPLX	phosphonate ABC transporter, permease protein PhnE	LFNDFJ_16985-MONOMER
+##	
+CPLX-ABC-TRANSPORT	phosphonate ABC transporter	CPLX56SW5V-2
+SUBUNIT-OF-CPLX	Phosphate/phosphite/phosphonate ABC transporter substrate-binding protein	LFNDFJ_16250-MONOMER
+SUBUNIT-OF-CPLX	phosphonate ABC transporter ATP-binding protein	LFNDFJ_16255-MONOMER
+SUBUNIT-OF-CPLX	phosphonate ABC transporter, permease protein PhnE	LFNDFJ_16265-MONOMER
+SUBUNIT-OF-CPLX	phosphonate ABC transporter, permease protein PhnE	LFNDFJ_16260-MONOMER
+##	
+CPLX-ABC-TRANSPORT	siderophore transport system	CPLX56SW5V-56
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_11050-MONOMER
+SUBUNIT-OF-CPLX	Putative siderophore transport system permease protein YfhA	LFNDFJ_11040-MONOMER
+SUBUNIT-OF-CPLX	Putative siderophore transport system permease protein YfiZ	LFNDFJ_11045-MONOMER
+SUBUNIT-OF-CPLX	cobalamin/Fe(3+)-siderophore ABC transporter ATP-binding protein	LFNDFJ_11035-MONOMER
+##	
+CPLX-ABC-TRANSPORT	spermidine/putrescine ABC transporter	CPLX56SW5V-3
+SUBUNIT-OF-CPLX	spermidine/putrescine ABC transporter ATP-binding protein	LFNDFJ_16790-MONOMER
+SUBUNIT-OF-CPLX	spermidine/putrescine ABC transporter permease	LFNDFJ_16800-MONOMER
+SUBUNIT-OF-CPLX	spermidine/putrescine ABC transporter permease	LFNDFJ_16805-MONOMER
+SUBUNIT-OF-CPLX	spermidine/putrescine ABC transporter substrate-binding protein	LFNDFJ_16795-MONOMER
+##	
+CPLX-ABC-TRANSPORT	sugar ABC transporter	CPLX56SW5V-53
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_08805-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_08810-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter substrate-binding protein	LFNDFJ_08815-MONOMER
+##	
+CPLX-ABC-TRANSPORT	sugar ABC transporter	CPLX56SW5V-48
+SUBUNIT-OF-CPLX	ABC transporter substrate-binding protein	LFNDFJ_17465-MONOMER
+SUBUNIT-OF-CPLX	Maltose/maltodextrin transport system permease protein	LFNDFJ_17470-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_17475-MONOMER
+##	
+CPLX-ABC-TRANSPORT	sugar ABC transporter	CPLX56SW5V-47
+SUBUNIT-OF-CPLX	Carbohydrate ABC transporter permease	LFNDFJ_14250-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_14255-MONOMER
+##	
+CPLX-ABC-TRANSPORT	sugar ABC transporter	CPLX56SW5V-46
+SUBUNIT-OF-CPLX	L-arabinose transport system permease protein AraQ	LFNDFJ_13895-MONOMER
+SUBUNIT-OF-CPLX	Multiple sugar transport system substrate-binding protein	LFNDFJ_13905-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_13900-MONOMER
+##	
+CPLX-ABC-TRANSPORT	sugar ABC transporter	CPLX56SW5V-44
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_12150-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter substrate-binding protein	LFNDFJ_12155-MONOMER
+##	
+CPLX-ABC-TRANSPORT	sugar ABC transporter	CPLX56SW5V-43
+SUBUNIT-OF-CPLX	Sugar ABC transporter substrate-binding protein	LFNDFJ_07740-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_07745-MONOMER
+##	
+CPLX-ABC-TRANSPORT	sugar ABC transporter	CPLX56SW5V-37
+SUBUNIT-OF-CPLX	Sugar ABC transporter substrate-binding protein	LFNDFJ_00525-MONOMER
+SUBUNIT-OF-CPLX	sugar ABC transporter permease	LFNDFJ_00520-MONOMER
+##	
+CPLX-ABC-TRANSPORT	sulfonate ABC transporter	CPLX56SW5V-101
+SUBUNIT-OF-CPLX	ABC transporter permease	LFNDFJ_17805-MONOMER
+SUBUNIT-OF-CPLX	NitT/TauT family transport system substrate-binding protein	LFNDFJ_17795-MONOMER
+SUBUNIT-OF-CPLX	sulfonate ABC transporter ATP-binding protein	LFNDFJ_17800-MONOMER
+##	
+##	
+####	Complexes that pre-existed in the PGDB
+##	
+CPLX-PRE-EXISTING	putative D-mannitol PEP-driven transporter	CPLX56SW5V-4
+SUBUNIT-OF-CPLX	PTS mannitol transporter subunit IIA	LFNDFJ_00870-MONOMER
+SUBUNIT-OF-CPLX	PTS mannitol transporter subunit IIB	LFNDFJ_00875-MONOMER
+##	
+CPLX-PRE-EXISTING	putative phosphate ABC transporter	CPLX56SW5V-1
+SUBUNIT-OF-CPLX	phosphate ABC transporter ATP-binding protein PstB	LFNDFJ_18395-MONOMER
+SUBUNIT-OF-CPLX	phosphate ABC transporter permease PstA	LFNDFJ_18400-MONOMER
+SUBUNIT-OF-CPLX	phosphate ABC transporter permease subunit PstC	LFNDFJ_18405-MONOMER
+##	
+##	
+####	 63 Polypeptides containing subunit-related words, but with no matching sibling subunits.
+##	The columns are:
+## Protein ID	Canonicalized core string used for matching	Common Name
+##	
+LFNDFJ_02115-MONOMER	3	Cytochrome aa3 subunit 3
+LFNDFJ_15255-MONOMER	abctypecobalttransportsystem	ABC-type cobalt transport system, permease component
+LFNDFJ_05740-MONOMER	abctypesugartransportsystemsatpasecomponents	ABC-type sugar transport systems, ATPase components
+LFNDFJ_07335-MONOMER	acetolactatesynthaselargesubunitbiosynthetic	Acetolactate synthase, large subunit, biosynthetic type
+LFNDFJ_10690-MONOMER	acetylpropionylcoacarboxylase	acetyl-/propionyl-CoA carboxylase subunit alpha
+LFNDFJ_00960-MONOMER	acylcoacarboxylase	acyl-CoA carboxylase subunit beta
+LFNDFJ_16485-MONOMER	alkanalmonooxygenase	Alkanal monooxygenase alpha chain
+LFNDFJ_07440-MONOMER	alphaketoaciddehydrogenase	Alpha-ketoacid dehydrogenase subunit beta
+LFNDFJ_02595-MONOMER	aminodeoxychorismatesynthase	Aminodeoxychorismate synthase component 1
+LFNDFJ_07360-MONOMER	aromaticringhydroxylatingdioxygenase	Aromatic ring-hydroxylating dioxygenase subunit alpha
+LFNDFJ_03800-MONOMER	aspartatecarbamoyltransferase	aspartate carbamoyltransferase catalytic subunit
+LFNDFJ_06710-MONOMER	azlcfamilyabctransporter	AzlC family ABC transporter permease
+LFNDFJ_04145-MONOMER	citratelyasesubunitbetalike	Citrate lyase subunit beta-like protein
+LFNDFJ_03235-MONOMER	dihydrolipoyllysineresiduesuccinyltransferasecomponentof2oxoglutaratedehydrogenasecomplex	Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex
+LFNDFJ_08760-MONOMER	dnadirectedrnapolymerasebetasubunit160kd	DNA-directed RNA polymerase, beta' subunit/160 kD subunit
+LFNDFJ_13145-MONOMER	dnagyrase	DNA gyrase subunit A
+LFNDFJ_18190-MONOMER	dnapolymeraseiiisubunitgamma	DNA polymerase III subunit gamma/tau
+LFNDFJ_13150-MONOMER	dnatopoisomeraseatphydrolyzing	DNA topoisomerase (ATP-hydrolyzing) subunit B
+LFNDFJ_12250-MONOMER	ecftransporters	ECF transporter S component
+LFNDFJ_13790-MONOMER	flagellarbiosynthesispathway	Flagellar biosynthesis pathway, component FlhA
+LFNDFJ_08255-MONOMER	flagellarhookbasalbodycomplex	flagellar hook-basal body complex protein FliE
+LFNDFJ_03915-MONOMER	glutamatesynthase	glutamate synthase large subunit
+LFNDFJ_12420-MONOMER	glycinebetaineabctransporter	Glycine/betaine ABC transporter
+LFNDFJ_12220-MONOMER	glycosyltransferasecatalyticsubunitofcellulosesynthaseandpolybeta16nacetylglucosaminesynthase	Glycosyltransferase, catalytic subunit of cellulose synthase and poly-beta-1,6-N-acetylglucosamine synthase
+LFNDFJ_16595-MONOMER	hemecoppertypecytochromequinoloxidase	Heme/copper-type cytochrome/quinol oxidase subunit 1
+LFNDFJ_09285-MONOMER	hydantoinase	hydantoinase subunit beta
+LFNDFJ_05320-MONOMER	ironuptaketransporterdeferrochelataseperoxidase	iron uptake transporter deferrochelatase/peroxidase subunit
+LFNDFJ_01580-MONOMER	lineargramicidinsynthase	Linear gramicidin synthase subunit D
+LFNDFJ_15700-MONOMER	lipoproteinabctransporter	Lipoprotein ABC transporter permease
+LFNDFJ_14260-MONOMER	maltoseabctransporter	Maltose ABC transporter periplasmic protein
+LFNDFJ_09725-MONOMER	methioninealanineimportfamilynsstransporter	Methionine/alanine import family NSS transporter small subunit
+LFNDFJ_04165-MONOMER	methylmalonylcoacarboxyltransferase12s	Methylmalonyl-CoA carboxyltransferase 12S subunit
+LFNDFJ_15895-MONOMER	molybdateabctransporter	molybdate ABC transporter permease subunit
+LFNDFJ_15935-MONOMER	molybdopterinsynthasesulfurcarrier	Molybdopterin synthase sulfur carrier subunit
+LFNDFJ_07530-MONOMER	multicomponentoxygenasereductasesubunitforphenylaceticaciddegradation	Putative multicomponent oxygenase/reductase subunit for phenylacetic acid degradation
+LFNDFJ_18890-MONOMER	multidrugabctransporteratpase	Multidrug ABC transporter ATPase
+LFNDFJ_06045-MONOMER	multifunctionaloxoglutaratedecarboxylaseoxoglutaratedehydrogenasethiaminepyrophosphatebindingsubunitdihydrolipoyllysineresiduesuccinyltransferase	multifunctional oxoglutarate decarboxylase/oxoglutarate dehydrogenase thiamine pyrophosphate-binding subunit/dihydrolipoyllysine-residue succinyltransferase subunit
+LFNDFJ_15865-MONOMER	nitratereductase	nitrate reductase subunit beta
+LFNDFJ_03675-MONOMER	nitritereductasenad@p@h	Nitrite reductase (NAD(P)H) small subunit
+LFNDFJ_02920-MONOMER	nonhemeironoxygenase	non-heme iron oxygenase ferredoxin subunit
+LFNDFJ_09145-MONOMER	nucleasesbccd	Nuclease SbcCD subunit D
+LFNDFJ_18465-MONOMER	phosphatesignalingcomplex	phosphate signaling complex protein PhoU
+LFNDFJ_03645-MONOMER	proteintranslocase	Protein translocase subunit SecD
+LFNDFJ_11175-MONOMER	pyridoxal5phosphatedependent	Pyridoxal-5'-phosphate-dependent protein subunit beta
+LFNDFJ_09125-MONOMER	recbcdenzyme	RecBCD enzyme subunit RecD
+LFNDFJ_15875-MONOMER	respiratorynitratereductase	respiratory nitrate reductase subunit gamma
+LFNDFJ_11700-MONOMER	restrictionendonuclease	restriction endonuclease subunit S
+LFNDFJ_13180-MONOMER	ribonucleasep	ribonuclease P protein component
+LFNDFJ_12430-MONOMER	ribosomalrnalargesubunitmethyltransferase	Ribosomal RNA large subunit methyltransferase G
+LFNDFJ_06150-MONOMER	ribosomalsubunitinterface	ribosomal subunit interface protein
+LFNDFJ_06070-MONOMER	ribosomesmallsubunitdependentgtpase	ribosome small subunit-dependent GTPase A
+LFNDFJ_09875-MONOMER	rnapolymerase	RNA polymerase subunit sigma
+LFNDFJ_13680-MONOMER	rnapolymerasesubunitsigma24	RNA polymerase subunit sigma-24
+LFNDFJ_02020-MONOMER	rnapolymerasesubunitsigma70	RNA polymerase subunit sigma-70
+LFNDFJ_13765-MONOMER	sugarabctransportersugarbinding	sugar ABC transporter sugar-binding protein
+LFNDFJ_00405-MONOMER	sulfoxidereductase	Sulfoxide reductase catalytic subunit YedY
+LFNDFJ_15850-MONOMER	thiolreductantabcexporter	thiol reductant ABC exporter subunit CydC
+LFNDFJ_08385-MONOMER	trnaadenosine37n6threonylcarbamoyltransferasecomplex	tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex ATPase subunit type 1 TsaE
+LFNDFJ_04060-MONOMER	twinargininetranslocase	twin-arginine translocase subunit TatC
+LFNDFJ_03540-MONOMER	twocomponentsystemresponseregulator	Two component system response regulator
+LFNDFJ_04120-MONOMER	typeiiirestrictionenzymeres	Type III restriction enzyme, res subunit
+LFNDFJ_02100-MONOMER	ubiquinolcytochromecreductasecytochromeb	ubiquinol-cytochrome c reductase cytochrome b subunit
+LFNDFJ_09430-MONOMER	zincabctransporter	zinc ABC transporter permease AztB
